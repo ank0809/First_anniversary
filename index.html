@@ -1,0 +1,1617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy 1st Anniversary ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+color:white;
+overflow-x:hidden;
+background:#12051d;
+
+background:
+radial-gradient(circle at 20% 20%,rgba(255,0,140,.35),transparent 35%),
+radial-gradient(circle at 80% 30%,rgba(120,70,255,.35),transparent 35%),
+radial-gradient(circle at 50% 80%,rgba(255,120,170,.25),transparent 35%),
+linear-gradient(135deg,#12051d,#24123d,#4b146d,#8b2fa5);
+
+background-size:400% 400%;
+animation:bgMove 18s ease infinite;
+
+}
+
+@keyframes bgMove{
+
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+
+}
+
+body::before{
+
+content:"";
+position:fixed;
+width:100%;
+height:100%;
+left:0;
+top:0;
+backdrop-filter:blur(8px);
+z-index:-1;
+
+}
+
+#welcomeScreen{
+
+position:fixed;
+left:0;
+top:0;
+width:100%;
+height:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+background:rgba(0,0,0,.75);
+backdrop-filter:blur(15px);
+z-index:9999;
+
+}
+
+.welcomeBox{
+
+width:90%;
+max-width:500px;
+
+padding:40px;
+
+border-radius:28px;
+
+background:rgba(255,255,255,.12);
+
+border:1px solid rgba(255,255,255,.2);
+
+box-shadow:0 20px 50px rgba(0,0,0,.4);
+
+}
+
+.welcomeBox h1{
+
+font-size:42px;
+font-family:'Great Vibes',cursive;
+margin-bottom:18px;
+
+}
+
+.welcomeBox p{
+
+font-size:18px;
+line-height:32px;
+opacity:.95;
+
+}
+
+.playBtn{
+
+margin-top:30px;
+
+padding:15px 40px;
+
+border:none;
+
+border-radius:50px;
+
+font-size:18px;
+
+background:linear-gradient(90deg,#ff3ea5,#b74cff);
+
+color:white;
+
+cursor:pointer;
+
+transition:.35s;
+
+box-shadow:0 0 25px rgba(255,80,170,.45);
+
+}
+
+.playBtn:hover{
+
+transform:scale(1.08);
+
+box-shadow:0 0 45px rgba(255,80,170,.8);
+
+}
+
+.main{
+
+display:none;
+
+padding:30px 18px 100px;
+
+}
+
+.card{
+
+max-width:950px;
+
+margin:auto;
+
+padding:35px;
+
+border-radius:30px;
+
+background:rgba(255,255,255,.11);
+
+border:1px solid rgba(255,255,255,.2);
+
+backdrop-filter:blur(18px);
+
+box-shadow:0 20px 60px rgba(0,0,0,.35);
+
+}
+
+.mainTitle{
+
+font-family:'Great Vibes',cursive;
+
+font-size:72px;
+
+text-align:center;
+
+margin-top:20px;
+
+margin-bottom:15px;
+
+text-shadow:0 0 20px rgba(255,255,255,.45);
+
+}
+
+.sub{
+
+text-align:center;
+
+font-size:20px;
+
+line-height:36px;
+
+opacity:.92;
+
+margin-bottom:30px;
+
+}
+
+#typing{
+
+font-size:20px;
+
+line-height:38px;
+
+text-align:center;
+
+min-height:140px;
+
+margin-bottom:40px;
+
+}
+
+.section{
+
+margin-top:28px;
+
+padding:28px;
+
+border-radius:25px;
+
+background:rgba(255,255,255,.08);
+
+border:1px solid rgba(255,255,255,.13);
+
+transition:.4s;
+
+}
+
+.section:hover{
+
+transform:translateY(-8px);
+
+background:rgba(255,255,255,.12);
+
+box-shadow:0 10px 40px rgba(255,80,170,.25);
+
+}
+
+.section h2{
+
+font-size:30px;
+
+margin-bottom:18px;
+
+color:#ffd6ee;
+
+}
+
+.section p{
+
+font-size:18px;
+
+line-height:36px;
+
+}
+
+.glowButton{
+
+display:block;
+
+margin:40px auto;
+
+padding:18px 45px;
+
+font-size:19px;
+
+border:none;
+
+border-radius:50px;
+
+cursor:pointer;
+
+background:linear-gradient(90deg,#ff4fa8,#9747ff);
+
+color:white;
+
+box-shadow:0 0 30px rgba(255,100,180,.45);
+
+transition:.35s;
+
+}
+
+.glowButton:hover{
+
+transform:scale(1.07);
+
+box-shadow:0 0 55px rgba(255,100,180,.8);
+
+}
+
+.timeline{
+
+margin-top:40px;
+
+padding-left:20px;
+
+border-left:4px solid rgba(255,255,255,.3);
+
+}
+
+.timelineItem{
+
+margin:35px 0;
+
+position:relative;
+
+padding-left:25px;
+
+}
+
+.timelineItem::before{
+
+content:"❤";
+
+position:absolute;
+
+left:-18px;
+
+top:0;
+
+font-size:22px;
+
+}
+
+.timelineItem h3{
+
+font-size:24px;
+
+margin-bottom:10px;
+
+color:#ffd3f1;
+
+}
+
+.timelineItem p{
+
+font-size:17px;
+
+line-height:32px;
+
+}
+
+.counter{
+
+margin-top:45px;
+
+text-align:center;
+
+padding:30px;
+
+border-radius:22px;
+
+background:rgba(255,255,255,.08);
+
+}
+
+.counter h2{
+
+font-size:30px;
+
+margin-bottom:20px;
+
+}
+
+#loveCounter{
+
+font-size:28px;
+
+font-weight:700;
+
+line-height:55px;
+
+color:#ffd5eb;
+
+}
+
+#popup{
+
+display:none;
+
+position:fixed;
+
+left:0;
+
+top:0;
+
+width:100%;
+
+height:100%;
+
+background:rgba(0,0,0,.75);
+
+justify-content:center;
+
+align-items:center;
+
+padding:20px;
+
+z-index:999;
+
+}
+
+.popupCard{
+
+max-width:650px;
+
+max-height:85vh;
+
+overflow-y:auto;
+
+padding:35px;
+
+border-radius:30px;
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(15px);
+
+border:1px solid rgba(255,255,255,.2);
+
+text-align:center;
+
+animation:popup .6s;
+
+}
+
+@keyframes popup{
+
+from{
+
+transform:scale(.5);
+
+opacity:0;
+
+}
+
+to{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+}
+
+.popupCard h2{
+
+font-family:'Great Vibes',cursive;
+
+font-size:52px;
+
+margin-bottom:20px;
+
+}
+
+.popupCard p{
+
+font-size:19px;
+
+line-height:36px;
+
+}
+
+.closeBtn{
+
+margin-top:28px;
+
+padding:15px 40px;
+
+border:none;
+
+border-radius:40px;
+
+background:#ff4fa8;
+
+color:white;
+
+font-size:18px;
+
+cursor:pointer;
+
+}
+
+.float{
+
+position:fixed;
+
+bottom:-80px;
+
+font-size:24px;
+
+animation:floatUp linear forwards;
+
+pointer-events:none;
+
+}
+
+@keyframes floatUp{
+
+to{
+
+transform:translateY(-120vh) rotate(360deg);
+
+opacity:0;
+
+}
+
+}
+
+.sparkle{
+
+position:fixed;
+
+width:6px;
+
+height:6px;
+
+border-radius:50%;
+
+background:white;
+
+pointer-events:none;
+
+animation:spark .8s linear forwards;
+
+}
+
+@keyframes spark{
+
+to{
+
+transform:scale(4);
+
+opacity:0;
+
+}
+
+}
+
+.finalBox{
+
+margin-top:50px;
+
+text-align:center;
+
+padding:35px;
+
+border-radius:25px;
+
+background:rgba(255,255,255,.08);
+
+}
+
+.finalBox h2{
+
+font-size:36px;
+
+margin-bottom:20px;
+
+}
+
+.yesBtn{
+
+padding:18px 55px;
+
+font-size:22px;
+
+border:none;
+
+border-radius:60px;
+
+cursor:pointer;
+
+background:linear-gradient(90deg,#ff4fa8,#9747ff);
+
+color:white;
+
+box-shadow:0 0 30px hotpink;
+
+transition:.4s;
+
+}
+
+.yesBtn:hover{
+
+transform:scale(1.08);
+
+}
+
+canvas{
+
+position:fixed;
+
+left:0;
+
+top:0;
+
+pointer-events:none;
+
+z-index:99999;
+
+}
+
+@media(max-width:768px){
+
+.mainTitle{
+
+font-size:52px;
+
+}
+
+.section h2{
+
+font-size:24px;
+
+}
+
+.section p{
+
+font-size:16px;
+
+line-height:30px;
+
+}
+
+#typing{
+
+font-size:18px;
+
+}
+
+}
+
+
+/* Dreamy anniversary atmosphere */
+body { background: radial-gradient(ellipse at 15% 15%,#5d245c 0%,transparent 42%),radial-gradient(ellipse at 85% 60%,#4d276f 0%,transparent 48%),linear-gradient(145deg,#170d2e,#35204d 52%,#5d2a62); background-attachment:fixed; }
+#dreamSky {position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;}
+#dreamSky .dream {position:absolute;display:block;opacity:0;animation:dreamDrift var(--duration) ease-in-out infinite;animation-delay:var(--delay);filter:drop-shadow(0 0 12px rgba(255,185,222,.55));will-change:transform,opacity;}
+@keyframes dreamDrift {0%{transform:translate3d(0,105vh,0) rotate(-15deg) scale(.75);opacity:0}15%{opacity:.68}80%{opacity:.52}100%{transform:translate3d(var(--sway),-18vh,0) rotate(22deg) scale(1.18);opacity:0}}
+#dreamSky .stardot{position:absolute;width:3px;height:3px;border-radius:50%;background:#ffe6fa;box-shadow:0 0 9px 3px #f7b8e3;animation:twinkle var(--twinkle) ease-in-out infinite alternate;opacity:.3}
+@keyframes twinkle{to{opacity:1;transform:scale(1.8)}}
+#welcomeScreen {z-index:9999;background:rgba(15,5,30,.65)}
+.main{position:relative;z-index:1}
+.card{background:rgba(48,23,66,.54);border:1px solid rgba(255,210,239,.23);box-shadow:0 22px 90px rgba(14,4,32,.48),0 0 65px rgba(255,137,208,.08)}
+.section{position:relative;overflow:hidden;background:linear-gradient(125deg,rgba(255,231,248,.10),rgba(196,149,252,.055));box-shadow:inset 0 1px rgba(255,255,255,.09)}
+.section:before{content:'♡';position:absolute;right:15px;top:2px;font-size:45px;color:rgba(255,205,234,.10);pointer-events:none}
+.mainTitle{background:linear-gradient(100deg,#fff6fb,#ffd1ea,#fff4c7,#ffd3f5);background-clip:text;-webkit-background-clip:text;color:transparent;filter:drop-shadow(0 0 13px rgba(255,182,219,.45))}
+.glowButton,.yesBtn,.playBtn{animation:gentlePulse 3.8s ease-in-out infinite}
+@keyframes gentlePulse{50%{box-shadow:0 0 40px rgba(255,138,206,.8);transform:translateY(-2px)}}
+.memoryRibbon{text-align:center;margin:10px auto 32px;padding:14px 18px;max-width:650px;border:1px solid rgba(255,213,234,.3);border-radius:99px;background:rgba(255,204,231,.09);font-size:14px;letter-spacing:.35px;color:#ffe6f2}
+@media(max-width:600px){.card{padding:22px 16px}.memoryRibbon{font-size:12px;border-radius:18px}.section{padding:21px}.finalBox h2{font-size:26px}}
+@media(prefers-reduced-motion:reduce){#dreamSky .dream,#dreamSky .stardot,.glowButton,.yesBtn,.playBtn{animation:none!important}#dreamSky .dream{display:none}}
+
+
+/* A gentle, contextual apology scene: only visible near the apology cards. */
+.apology-scene{position:relative;isolation:isolate;border:1px solid rgba(255,209,228,.36);background:linear-gradient(135deg,rgba(105,49,95,.48),rgba(78,45,105,.43));}
+.apology-scene::after{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;box-shadow:inset 0 0 42px rgba(255,177,214,.075);z-index:-1}
+.apology-scene h2,.apology-scene p{position:relative;z-index:2}
+.apology-art{position:absolute;inset:0;overflow:hidden;pointer-events:none;border-radius:inherit;z-index:1}
+.apology-art .apology-word{position:absolute;bottom:12px;right:18px;font-family:'Great Vibes',cursive;font-size:clamp(34px,7vw,75px);color:rgba(255,218,237,.13);transform:rotate(-12deg);animation:apologyBreath 5s ease-in-out infinite}
+.apology-art .apology-envelope{position:absolute;right:11%;top:14%;font-size:clamp(26px,5vw,47px);opacity:.25;animation:apologyFloat 7s ease-in-out infinite;filter:drop-shadow(0 0 9px #ff9dca)}
+.apology-art .apology-heart{position:absolute;left:var(--left);bottom:-24px;font-size:var(--size);opacity:0;animation:apologyRise var(--speed) ease-in-out infinite;animation-delay:var(--delay);filter:drop-shadow(0 0 7px rgba(255,187,218,.7))}
+.apology-art .apology-light{position:absolute;top:var(--top);left:var(--left);width:5px;height:5px;border-radius:50%;background:#ffe5f0;box-shadow:0 0 12px 4px rgba(255,176,211,.35);animation:apologyTwinkle var(--speed) ease-in-out infinite;animation-delay:var(--delay)}
+@keyframes apologyRise{0%{opacity:0;transform:translate3d(0,0,0) scale(.65) rotate(-15deg)}20%{opacity:.36}75%{opacity:.26}100%{opacity:0;transform:translate3d(32px,-270px,0) scale(1.2) rotate(15deg)}}
+@keyframes apologyFloat{50%{transform:translateY(-13px) rotate(8deg);opacity:.42}}
+@keyframes apologyBreath{50%{opacity:.8;transform:rotate(-9deg) scale(1.08)}}
+@keyframes apologyTwinkle{50%{opacity:.15;transform:scale(.6)}}
+@media(prefers-reduced-motion:reduce){.apology-art *{animation:none!important}.apology-art .apology-heart{display:none}}
+
+
+/* Floating apologies appear only after the final surprise popup opens. */
+.final-apology-layer{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:1;border-radius:0}
+.final-apology-note{position:absolute;bottom:-75px;left:var(--x);font-family:'Poppins',sans-serif;font-weight:600;white-space:nowrap;font-size:var(--font);color:rgba(255,225,240,.76);text-shadow:0 0 12px rgba(255,115,183,.8),0 0 25px rgba(255,168,210,.4);animation:finalSorryFloat var(--time) linear forwards;will-change:transform,opacity}
+@keyframes finalSorryFloat{0%{transform:translate3d(0,0,0) rotate(-7deg);opacity:0}15%{opacity:.85}80%{opacity:.75}100%{transform:translate3d(var(--drift),-115vh,0) rotate(8deg);opacity:0}}
+.final-popup-card{position:relative;z-index:2;max-height:85vh;overflow-y:auto;box-shadow:0 15px 80px rgba(255,100,176,.22)}
+@media(prefers-reduced-motion:reduce){.final-apology-note{animation:none;display:none}}
+
+
+/* Storybook additions — self-contained and GitHub Pages ready */
+.storybook-scene{margin:30px auto 18px;padding:25px 14px 20px;text-align:center;border:1px solid rgba(255,217,239,.3);border-radius:28px;background:radial-gradient(circle at 50% 65%,rgba(255,176,208,.16),transparent 70%),rgba(255,255,255,.045);overflow:hidden;position:relative}
+.storybook-scene h2{font-family:'Great Vibes',cursive;font-size:clamp(30px,6vw,45px);color:#ffe1ee;margin-bottom:5px}
+.storybook-scene .scene-caption{font-size:14px;color:#ffe2f0;line-height:1.7}
+.couple-stage{height:160px;position:relative;max-width:350px;margin:auto}
+.couple-person{position:absolute;bottom:7px;font-size:76px;line-height:1;filter:drop-shadow(0 8px 12px rgba(0,0,0,.25))}
+.couple-boy{left:13%;animation:boyApproach 5.5s ease-in-out infinite alternate}
+.couple-girl{right:13%;animation:girlSway 3s ease-in-out infinite}
+.couple-flower{position:absolute;bottom:38px;left:45%;font-size:39px;animation:flowerOffer 5.5s ease-in-out infinite alternate}
+.couple-bubble{position:absolute;top:0;left:50%;transform:translateX(-50%);background:#ffeaf4;color:#8c3865;padding:8px 15px;border-radius:25px;font-size:13px;white-space:nowrap;box-shadow:0 8px 22px rgba(0,0,0,.15);animation:bubbleAppear 5s ease-in-out infinite}
+@keyframes boyApproach{to{transform:translateX(29px)}}@keyframes girlSway{50%{transform:rotate(-5deg)}}@keyframes flowerOffer{to{transform:translateX(22px) rotate(-18deg)}}@keyframes bubbleAppear{0%,100%{opacity:.45}35%,75%{opacity:1}}
+.envelope-zone{text-align:center;margin:32px auto 8px;padding:22px 14px;border-radius:25px;background:rgba(255,192,224,.055);border:1px dashed rgba(255,215,235,.35)}
+.envelope-trigger{position:relative;display:block;margin:12px auto 0;width:min(260px,80vw);height:155px;border:0;background:none;cursor:pointer;perspective:800px;color:white}
+.envelope-shell{position:absolute;inset:28px 15px 8px;background:linear-gradient(140deg,#ffbbda,#e48bc0);border-radius:7px 7px 14px 14px;box-shadow:0 15px 35px rgba(12,3,26,.38);transition:transform .5s}
+.envelope-shell:before{content:'';position:absolute;inset:0;clip-path:polygon(0 0,50% 55%,100% 0);background:#ffd7e9;transform-origin:top;transition:transform .75s;z-index:3}
+.envelope-shell:after{content:'💗';position:absolute;left:50%;top:49%;transform:translate(-50%,-50%);font-size:27px;z-index:4}
+.envelope-paper{position:absolute;left:12%;right:12%;top:35px;height:77px;background:#fff7fc;color:#ad5685;border-radius:7px;padding:15px 5px;font-family:'Great Vibes',cursive;font-size:26px;transition:transform .85s;z-index:2}
+.envelope-trigger.opening .envelope-shell:before{transform:rotateX(165deg)}.envelope-trigger.opening .envelope-paper{transform:translateY(-65px)}.envelope-trigger:hover .envelope-shell{transform:translateY(-4px)}
+.envelope-zone small{display:block;color:#ffe3ef;margin-top:6px}
+.teddy-corner{text-align:center;margin:20px auto 8px}.teddy-btn{border:1px solid rgba(255,206,232,.4);border-radius:20px;background:rgba(255,225,239,.10);padding:14px 18px;color:#fff;cursor:pointer;max-width:100%;transition:transform .3s}.teddy-btn:hover{transform:translateY(-3px)}.teddy-figure{display:block;font-size:60px;animation:teddyBob 3s ease-in-out infinite}.teddy-sign{display:block;margin-top:5px;font-size:14px;font-weight:600;color:#ffe5f2}@keyframes teddyBob{50%{transform:translateY(-7px) rotate(4deg)}}
+.timelineItem{opacity:.68;transition:opacity .8s,transform .8s;transform:translateX(-8px)}.timelineItem.memory-visible{opacity:1;transform:translateX(0)}.timeline{border-left-color:rgba(255,160,211,.65);position:relative}.timeline:before{content:'';position:absolute;top:0;left:-4px;width:4px;height:var(--timeline-progress,0%);background:#ffc4e1;box-shadow:0 0 14px #ff8ac7;border-radius:6px;transition:height .3s}.timelineItem.memory-visible:before{filter:drop-shadow(0 0 8px #ff8ac7)}
+.music-dock{position:fixed;right:14px;bottom:14px;z-index:1000;display:none;align-items:center;gap:9px;padding:10px 13px;border:1px solid rgba(255,215,238,.35);border-radius:99px;background:rgba(48,19,66,.88);box-shadow:0 8px 35px rgba(0,0,0,.35);backdrop-filter:blur(16px);font-size:12px;max-width:calc(100vw - 28px)}
+.music-dock button{border:0;border-radius:50%;width:35px;height:35px;background:#ffb5d8;color:#602449;font-size:17px;cursor:pointer}.music-dock input{width:65px;accent-color:#ffb5d8}.music-dock .music-label{white-space:nowrap}
+.final-heart-glow{position:absolute;left:50%;top:42%;width:160px;height:160px;transform:translate(-50%,-50%);font-size:130px;opacity:.13;filter:drop-shadow(0 0 30px #ff93c5);pointer-events:none;z-index:1;animation:heartBeat 4s ease-in-out infinite}.final-popup-card{isolation:isolate}.final-popup-card>*{position:relative;z-index:2}@keyframes heartBeat{50%{opacity:.26;transform:translate(-50%,-50%) scale(1.13)}}
+.final-handwritten{display:block;font-family:'Great Vibes',cursive;font-size:clamp(26px,5vw,37px);color:#ffe4f1;margin:20px auto 0;line-height:1.25;opacity:0;animation:fadeHandwriting 2s ease 4s forwards}@keyframes fadeHandwriting{to{opacity:1}}
+@media(max-width:500px){.music-dock{right:8px;bottom:8px;padding:8px}.music-dock input{width:45px}.music-label{font-size:11px}.couple-person{font-size:64px}}
+@media(prefers-reduced-motion:reduce){.couple-boy,.couple-girl,.couple-flower,.couple-bubble,.teddy-figure,.final-heart-glow,.final-handwritten{animation:none!important}.final-handwritten{opacity:1}.timelineItem{opacity:1;transform:none}}
+
+</style>
+
+</head>
+
+<body>
+<div id="dreamSky" aria-hidden="true"></div>
+
+<audio id="bgMusic" loop>
+
+<source src="https://raw.githubusercontent.com/ank0809/Valentine/ef63e0e79e66cacbf8d548255e1b93cc955d5a32/rhnuma_raone_srk.mp3" type="audio/mpeg">
+
+</audio>
+
+<div id="welcomeScreen">
+
+<div class="welcomeBox">
+
+<h1>For My Pretty Girl ❤️</h1>
+
+<p>
+
+Before you enter...
+
+I just want you to know that every single thing on the next page was made with love.
+
+So...
+
+Take a deep breath...
+
+Press the button below...
+
+and let me remind you how special you are.
+
+🌸❤️
+
+</p>
+
+<button class="playBtn" onclick="startExperience()">
+
+🎵 Play Our Song
+
+</button>
+
+</div>
+
+</div>
+
+<div class="main" id="main">
+
+<div class="card">
+
+<h1 class="mainTitle">
+
+Happy 1st Anniversary ❤️
+
+</h1>
+
+<p class="sub">
+
+To my precious Betuuu — I know you are hurting, and I am sorry. Even now, you are incredibly important to me. This is my little anniversary letter, from my heart to yours. 🥺❤️
+
+</p>
+
+<div class="memoryRibbon">🌙 late-night talks &nbsp;·&nbsp; 🧸 little memories &nbsp;·&nbsp; 🤍 one gentle chance</div>
+<p id="typing"></p>
+
+<div class="section">
+<h2>🥺 One Year Of Us</h2>
+<p>
+We've been through so much together...
+
+Sleepless nights. Little fights. Long conversations that somehow never felt long enough. Falling asleep while talking. Laughing like absolute idiots over the smallest things. Random calls. Random silences. Cute moments. Difficult moments. And countless little memories that I'll always keep close to my heart.
+
+This one year wasn't perfect... but it was ours.
+
+And honestly, I wouldn't trade the memories we've made for anything in the world. ❤️
+</p>
+</div>
+
+<div class="storybook-scene" aria-label="A little animated apology scene"><h2>A little flower, from my heart 🌷</h2><div class="couple-stage" aria-hidden="true"><div class="couple-bubble">I'm sorry, Betuuu 🥺</div><span class="couple-person couple-boy">🧑🏻</span><span class="couple-flower">🌹</span><span class="couple-person couple-girl">👩🏻</span></div><p class="scene-caption">A tiny flower can't fix everything… but I want to show you gentleness through my actions. 🤍</p></div>
+<div class="section apology-scene">
+<h2>💔 I'm Truly Sorry</h2>
+<p>
+I'm really sorry for all the problems I've caused, for every mistake I've made, for every moment when my words or actions hurt you, and especially for all the tears that happened because of me.
+
+I know saying "sorry" can't undo everything. I know some hurts take time to heal. But I want you to know that hurting you was never what I wanted.
+
+I never wanted to become the reason behind your sadness. You mean far too much to me for that.
+
+If I could go back and change the moments that hurt you, I would. And if I have to spend every day proving how much you matter to me, I will.
+
+I'm sorry, my love. Truly. ❤️
+</p>
+</div>
+
+<div class="section">
+<h2>❤️ Nothing About My Love Was Fake</h2>
+<p>
+I just want you to know one thing, from the deepest part of my heart...
+
+I never faked anything with you.
+
+Not my feelings. Not my emotions. Not the care I had for you. Not the happiness you gave me. And definitely not my love.
+
+Whatever happened between us, whatever mistakes I made, my love for you was always real.
+
+It was you then.
+
+It's you now.
+
+And if my heart gets to choose in every lifetime, it'll still be you. 🫶🏻
+</p>
+</div>
+
+<div class="section">
+<h2>🌙 You Are So Much More Than You Know</h2>
+<p>
+You became a part of my life so quietly that I didn't even realise when you became such a huge part of my heart.
+
+You're the person I want to tell everything to.
+
+The person whose message can change my entire mood.
+
+The person whose smile can make my worst day feel a little lighter.
+
+You're my comfort after a long day, my favourite conversation, my sweetest thought before sleeping, and the person I look for even in the smallest moments.
+
+I don't just love you for the happy days.
+
+I love you through the complicated days too.
+
+And I never want you to question your place in my heart. There has never been anyone who could simply take your place, because there is only one you. ❤️
+</p>
+</div>
+
+<div class="section">
+<h2>♾️ In Every Universe, It's You</h2>
+<p>
+If there were a thousand universes, I'd still look for you.
+
+If I had to live a thousand different lives, I'd still hope somehow our paths would cross.
+
+If I had to fall in love a thousand times, I'd want every version of my heart to find its way back to you.
+
+Because losing you is something my heart never wants to learn how to live with.
+
+I don't want a perfect love story.
+
+I just want our story.
+
+With all its silly moments, difficult days, endless talks, stupid fights, warm hugs, laughter, apologies, and all the little things that make us... us.
+
+I never want to lose you in this universe.
+
+And I never want to lose you in any other one either. ❤️♾️
+</p>
+</div>
+
+<div class="envelope-zone"><h2 style="color:#ffe1f0">💌 A letter, just for you</h2><button type="button" class="envelope-trigger" id="envelopeTrigger" onclick="openEnvelopeLetter()" aria-label="Open my letter for you"><span class="envelope-shell"></span><span class="envelope-paper">For Betuuu ♡</span></button><small>Tap the envelope to open my heart 💗</small></div>
+
+<div class="section apology-scene">
+
+<h2>🥺 Just One Last Chance</h2>
+
+<p>
+Betuuu, if I could ask for one little thing today, it would be one more chance. Just one last chance to make things right. I know a cute webpage cannot undo your tears, and I would never ask you to pretend nothing happened. I want to listen without arguing, understand without making excuses, and show you through my actions that your heart is safe with me. I know you may not be ready, and I will respect that. But if you ever feel ready to try again, I will not take that chance lightly. 🥺❤️
+</p><div class="teddy-corner"><button type="button" class="teddy-btn" onclick="changeTeddyMessage(this)" aria-label="Tap teddy for a little promise"><span class="teddy-figure">🧸</span><span class="teddy-sign">I'm Sorry, Madam Ji 🥺❤️</span></button></div>
+
+</div>
+
+<div class="section">
+
+<h2>🦋 I Miss Our Little Things</h2>
+
+<p>
+I miss our random calls, our sleepy voices, your tiny stories, our silly jokes, and laughing like two idiots over absolutely nothing. I miss asking if aapne khana khaya, hearing about your day, and all those little moments that felt like home. I know I cannot ask for those moments back as though nothing happened. I just want you to know how precious they have always been to me, Madam Ji. 🌸❤️
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>🌙 My Favourite Place Is Still You</h2>
+
+<p>
+Even on days when we are not okay, I remember the comfort of your voice and how easily you could make an ordinary day beautiful. Aapki smile, your silly drama, your sleepy good nights... all of it matters to me. I am sorry I made the person who felt like home to me feel hurt or unsafe. You deserve gentleness, patience and peace, whether or not you are ready to talk to me right now. 🤍
+</p>
+
+</div>
+
+<div class="section apology-scene">
+
+<h2>🤍 Not Just Promises, Real Change</h2>
+
+<p>
+I know I have said sorry, and I know words alone are not enough. I need to take responsibility for the things I said and did, especially when I was angry. I want to learn to pause, listen carefully, be honest even when conversations are difficult, and never use hurtful words to win an argument. I cannot promise never to make a mistake, but I can promise to take accountability and work consistently to do better. You should never have to beg me for kindness. ❤️
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>☕ The Little Tomorrow I Still Hope For</h2>
+
+<p>
+I still imagine us sharing our thoughts, taking silly pictures, going on long drives, laughing over things nobody else finds funny, celebrating even the smallest wins, and making food together while turning the kitchen into our own little mess. 🥹❤️ I still dream of those random moments when aap mujhe apni chhoti-chhoti baatein batayengi, and I’ll just sit there smiling because listening to you is one of my favourite things. I hope someday we can make many more beautiful memories together, if aap bhi yahi chahti hain. But I don’t want to rush you into a future while your heart is still hurting in the present. First, I want to earn back the trust I damaged, through patience, honesty, gentleness, and actions—not just words. One little day at a time, Betuuu. 🫶🏻
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>🌻 Thank You, Even Now</h2>
+
+<p>
+Thank you for every late-night conversation, every sleepy call, every laugh, every little act of care, and every memory from our first year. I know you are upset, and you have reasons to be. I will never make your pain smaller just because I miss you. Thank you for the love you gave me. I am sorry for the times I failed to care for it properly. You are so much more than a chapter in my life, Betuuu. 🌷❤️
+</p>
+
+</div>
+
+<div class="timeline">
+
+<div class="timelineItem">
+
+<h3>🌸 The Beginning</h3>
+
+<p>
+
+Two people...
+
+Two different lives...
+
+And somehow destiny quietly introduced us to each other.
+
+I still think that was one of life's best decisions.
+
+</p>
+
+</div>
+
+<div class="timelineItem">
+
+<h3>💬 Endless Conversations</h3>
+
+<p>
+
+The more we talked...
+
+The more I realised...
+
+You weren't becoming a part of my day.
+
+You were becoming the best part of it.
+
+</p>
+
+</div>
+
+<div class="timelineItem">
+
+<h3>❤️ The Realisation</h3>
+
+<p>
+
+One day I stopped wondering whether I liked you.
+
+Instead...
+
+I started imagining every beautiful future with you in it.
+
+That's when I knew...
+
+You were different.
+
+</p>
+
+</div>
+
+<div class="timelineItem">
+
+<h3>🥺 If We Get Another Beginning</h3>
+
+<p>
+
+I know we cannot go back to the beginning. But maybe, if you choose, we can build something kinder from here. One more chance, just one last one, to show you how seriously I take your trust. No rushing, no pretending the hurt never happened. Just patience, care, and better actions. ❤️
+
+</p>
+
+</div>
+
+</div>
+
+<div class="counter">
+
+<h2>
+
+❤️ Loving You Since ❤️
+
+</h2>
+
+<div id="loveCounter">
+
+Loading...
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>💌 I Still Smile At Your Name</h2>
+
+<p>
+Your name on my screen has always meant something special. I miss those little messages more than I can explain. But I do not want you to feel pressured to reply just to make me happy. Take the time you need. If we talk again, I want it to feel safe and easy for you, not like another difficult conversation you have to survive. 🥺💕
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>♾️ I Would Still Find You</h2>
+
+<p>
+If there were a thousand universes, I would still hope to meet the girl with the prettiest smile and the softest heart. And in every one of them, I would want to treat her more carefully than I sometimes did in this one. I never want to lose you in any universe, but I also know loving you means respecting what you choose. If I am given another chance, I want to make our love feel as beautiful to you as it has always felt to me. ❤️♾️
+</p>
+
+</div>
+
+<div class="finalBox">
+
+<h2>
+
+I know you are mad at me, Betuuu...
+
+and I know I gave you reasons to be.
+
+I am sorry for the tears I caused.
+
+If your heart ever feels ready, may I have just one last chance to do better?
+
+❤️
+
+</h2>
+
+<button class="yesBtn" onclick="celebrate()">
+
+💌 One Last Thing From My Heart ❤️
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="popup">
+
+<div class="popupCard">
+
+<h2>
+
+My Letter To You ❤️
+
+</h2>
+
+<p>
+Happy 1st Anniversary, my precious Betuuu. ❤️
+
+I know aap mujhse bahut naraz hain, and I understand why. I have hurt you, and I am so sorry for every tear, every sleepless night, and every moment I made you question your worth or my love.
+
+Please believe this much: my feelings were never fake. My care, my emotions, my love, and all those little moments with you were real. But I also understand that real feelings do not excuse hurtful actions.
+
+I miss our laughter, our long calls, falling asleep together on the phone, and our silly little fights that used to end in smiles. I miss us. And I know I have work to do before I can ask you to trust me again.
+
+So here is my tiny, heartfelt request: just one more chance, my love. One last chance to listen better, to be kinder, and to show through actions that I am learning from my mistakes.
+
+If you need time or space, I will respect it. I do not want to pressure you. I only want you to know how deeply important you are to me.
+
+In every universe, I would still hope to find you. And in this one, I hope I can become someone who brings you peace, not tears.
+
+I love you, Madam Ji. Happy first anniversary. 🥺❤️♾️
+</p>
+
+<button class="closeBtn" onclick="closePopup()">
+
+I Love You ❤️
+
+</button>
+
+</div>
+
+</div>
+
+<div class="music-dock" id="musicDock" aria-label="Background music controls"><span class="music-label">🎵 Our Song ❤️</span><button id="musicToggle" type="button" onclick="toggleMusic()" aria-label="Pause music">⏸</button><input type="range" id="musicVolume" min="0" max="100" value="40" aria-label="Music volume" oninput="setMusicVolume(this.value)"></div>
+<canvas id="canvas"></canvas>
+
+<script>
+const typingText = `Happy 1st Anniversary, My Pretty Girl ❤️
+
+One whole year of us...
+
+We've been through sleepless nights, silly fights, long talks, falling asleep while talking, laughing like idiots over the smallest things, and so many little moments that I'll carry in my heart forever.
+
+And through all of it, one thing has always been true...
+
+My feelings for you were never fake. My emotions were never fake. My love was, is, and will always be only for you. ❤️
+
+I'm really sorry for all the problems, all the mistakes I've made, and every tear I've ever caused you. I never meant to hurt you in any way. If I could take away every moment that made your heart heavy, I would do it without thinking twice.
+
+I know these past few weeks have been really difficult for us. But even in the hardest moments, my heart has never stopped choosing you.
+
+You are not just someone I love... you are someone I never want to lose in any universe. I know I must earn back your trust, and I am asking for one last chance to do that, if you are ready. 🌙❤️`;
+
+let index = 0;
+
+function typeWriter() {
+    if (index < typingText.length) {
+        document.getElementById("typing").innerHTML += typingText.charAt(index);
+        index++;
+        setTimeout(typeWriter, 35);
+    }
+}
+
+function startExperience() {
+
+    document.getElementById("welcomeScreen").style.display = "none";
+
+    document.getElementById("main").style.display = "block";
+
+    const music = document.getElementById("bgMusic");
+
+    music.volume = 0.4;
+    document.getElementById("musicDock").style.display = "flex";
+
+    music.play().catch(() => {});
+
+    typeWriter();
+
+}
+
+function openPopup() {
+
+    document.getElementById("popup").style.display = "flex";
+
+}
+
+function closePopup() {
+
+    document.getElementById("popup").style.display = "none";
+
+}
+
+const emojis = [
+"❤️",
+"💖",
+"💕",
+"💗",
+"💞",
+"🌸",
+"✨",
+"🦋"
+];
+
+function createFloatingEmoji(){
+
+const emoji=document.createElement("div");
+
+emoji.className="float";
+
+emoji.innerHTML=emojis[Math.floor(Math.random()*emojis.length)];
+
+emoji.style.left=Math.random()*100+"vw";
+
+emoji.style.animationDuration=(5+Math.random()*4)+"s";
+
+emoji.style.fontSize=(20+Math.random()*20)+"px";
+
+document.body.appendChild(emoji);
+
+setTimeout(()=>{
+
+emoji.remove();
+
+},9000);
+
+}
+
+setInterval(createFloatingEmoji,1100);
+
+document.addEventListener("mousemove",function(e){
+
+for(let i=0;i<2;i++){
+
+const s=document.createElement("div");
+
+s.className="sparkle";
+
+s.style.left=e.clientX+(Math.random()*16-8)+"px";
+
+s.style.top=e.clientY+(Math.random()*16-8)+"px";
+
+document.body.appendChild(s);
+
+setTimeout(()=>{
+
+s.remove();
+
+},800);
+
+}
+
+});
+
+const startDate = new Date(2025, 9, 23, 0, 0, 0);
+
+function updateLoveCounter(){
+
+const now = new Date();
+
+let diff = now - startDate;
+
+let days = Math.floor(diff / (1000*60*60*24));
+
+diff %= (1000*60*60*24);
+
+let hours = Math.floor(diff/(1000*60*60));
+
+diff %= (1000*60*60);
+
+let minutes = Math.floor(diff/(1000*60));
+
+let seconds = Math.floor((diff%(1000*60))/1000);
+
+document.getElementById("loveCounter").innerHTML=
+
+`${days} Days ❤️<br>
+${hours} Hours 💕<br>
+${minutes} Minutes 🌸<br>
+${seconds} Seconds ✨`;
+
+}
+
+setInterval(updateLoveCounter,1000);
+
+updateLoveCounter();
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+
+function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+
+resizeCanvas();
+window.addEventListener("resize", resizeCanvas);
+
+let confetti = [];
+
+function randomColor() {
+    const colors = [
+        "#ff4fa8",
+        "#ff77c8",
+        "#ffd166",
+        "#ffffff",
+        "#b76cff",
+        "#ff9ed2"
+    ];
+
+    return colors[Math.floor(Math.random() * colors.length)];
+}
+
+function launchConfetti() {
+
+    confetti = [];
+
+    for (let i = 0; i < 250; i++) {
+
+        confetti.push({
+
+            x: Math.random() * canvas.width,
+
+            y: Math.random() * canvas.height - canvas.height,
+
+            r: Math.random() * 6 + 4,
+
+            d: Math.random() * 250,
+
+            color: randomColor(),
+
+            tilt: Math.random() * 10 - 10,
+
+            speed: Math.random() * 3 + 2,
+
+            angle: Math.random() * Math.PI * 2
+
+        });
+
+    }
+
+}
+
+function drawConfetti() {
+
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+
+    confetti.forEach(c=>{
+
+        ctx.beginPath();
+
+        ctx.fillStyle=c.color;
+
+        ctx.arc(c.x,c.y,c.r,0,Math.PI*2);
+
+        ctx.fill();
+
+    });
+
+}
+
+function updateConfetti(){
+
+    confetti.forEach(c=>{
+
+        c.y+=c.speed;
+
+        c.x+=Math.sin(c.angle);
+
+        c.angle+=0.02;
+
+    });
+
+    confetti=confetti.filter(c=>c.y<canvas.height+30);
+
+}
+
+function animateConfetti(){
+
+    drawConfetti();
+
+    updateConfetti();
+
+    requestAnimationFrame(animateConfetti);
+
+}
+
+animateConfetti();
+
+function celebrate(){
+
+    launchConfetti();
+
+    for(let i=0;i<120;i++){
+
+        setTimeout(createFloatingEmoji,i*80);
+
+    }
+
+    const music=document.getElementById("bgMusic");
+
+    if(music.paused){
+
+        music.play().catch(()=>{});
+
+    }
+
+    document.querySelector(".yesBtn").innerHTML="❤️ I Will Show You Through My Actions";
+
+    document.querySelector(".finalBox h2").innerHTML=`
+
+Thank you for reading this far, my love. 🥺❤️<br><br>
+
+I know pressing a button does not mean you have forgiven me.<br><br>
+
+I am asking for just one last chance, whenever and only if you feel ready.<br><br>
+
+I want to listen better, love more gently, and earn back your trust with actions.<br><br>
+
+<b>You matter more to me than my pride.</b><br><br>
+
+Happy 1st Anniversary, Betuuu. ❤️♾️
+
+`;
+    setTimeout(() => {
+
+        const finalPopup = document.createElement("div");
+
+        finalPopup.style.position = "fixed";
+        finalPopup.style.left = "0";
+        finalPopup.style.top = "0";
+        finalPopup.style.width = "100%";
+        finalPopup.style.height = "100%";
+        finalPopup.style.background = "rgba(0,0,0,.82)";
+        finalPopup.style.display = "flex";
+        finalPopup.style.justifyContent = "center";
+        finalPopup.style.alignItems = "center";
+        finalPopup.style.zIndex = "999999";
+        finalPopup.style.overflowY = "auto";
+        finalPopup.className = "final-surprise-popup";
+
+        finalPopup.innerHTML = `
+        <div class="final-apology-layer" aria-hidden="true"></div>
+        <div class="final-popup-card" style="
+            width:90%;
+            max-width:650px;
+            background:rgba(255,255,255,.12);
+            backdrop-filter:blur(20px);
+            padding:40px;
+            border-radius:28px;
+            border:1px solid rgba(255,255,255,.25);
+            text-align:center;
+            color:white;
+            animation:popup .6s;">
+            
+            <h1 style="
+                font-family:'Great Vibes',cursive;
+                font-size:58px;
+                margin-bottom:20px;">
+                I Love You ❤️
+            </h1><div class="final-heart-glow" aria-hidden="true">💗</div>
+
+            <p style="
+                font-size:20px;
+                line-height:38px;">
+
+                Thank you for reading everything till the end. ❤️<br><br>
+
+                I know you are hurting, and I am sorry I added to that pain.<br><br>
+                 If this page made you smile even once...<br>
+                then every minute I spent making it was worth it.<br><br>
+
+                I hope life always gives you reasons to smile,<br>
+                dreams that come true,<br>
+                and a heart that always feels loved.<br><br>
+
+                Happy 1st Anniversary,<br>
+                My Pretty Girl. 🌸❤️<br><br>
+
+                <b>One last chance, if your heart is ready. I love you. 🥺❤️</b><span class="final-handwritten">I can't change yesterday, but I can choose to be kinder tomorrow. 🤍</span>
+
+            </p>
+
+            <button onclick="this.parentElement.parentElement.remove()"
+            style="
+                margin-top:30px;
+                padding:16px 45px;
+                border:none;
+                border-radius:50px;
+                background:linear-gradient(90deg,#ff4fa8,#9747ff);
+                color:white;
+                font-size:18px;
+                cursor:pointer;">
+
+                ❤️ Love You Always ❤️
+
+            </button>
+
+        </div>
+        `;
+
+        document.body.appendChild(finalPopup);
+        startFinalApologyFloat(finalPopup);
+
+    },2500);
+
+}
+
+setInterval(()=>{
+
+    const star=document.createElement("div");
+
+    star.innerHTML="✨";
+
+    star.style.position="fixed";
+    star.style.left=Math.random()*100+"vw";
+    star.style.top="-20px";
+    star.style.fontSize=(12+Math.random()*20)+"px";
+    star.style.pointerEvents="none";
+    star.style.opacity=".9";
+    star.style.transition="transform 8s linear, top 8s linear";
+
+    document.body.appendChild(star);
+
+    requestAnimationFrame(()=>{
+
+        star.style.top="110vh";
+        star.style.transform=`translateX(${Math.random()*200-100}px) rotate(360deg)`;
+
+    });
+
+    setTimeout(()=>{
+
+        star.remove();
+
+    },8000);
+
+},500);
+
+
+// Light, mobile-friendly drifting hearts, petals, little notes and stars.
+(function createDreamSky(){
+ const sky=document.getElementById('dreamSky');
+ const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ if(reduced)return;
+ const symbols=['♡','♥','🌸','✧','✨','🦋','💌','🌷','🤍'];
+ const count=window.innerWidth<650?15:28;
+ for(let i=0;i<count;i++){
+  const el=document.createElement('span');el.className='dream';
+  el.textContent=symbols[i%symbols.length];
+  el.style.left=(Math.random()*100)+'%';
+  el.style.fontSize=(13+Math.random()*17)+'px';
+  el.style.setProperty('--duration',(17+Math.random()*19)+'s');
+  el.style.setProperty('--delay',(-Math.random()*35)+'s');
+  el.style.setProperty('--sway',(-75+Math.random()*150)+'px');
+  sky.appendChild(el);
+ }
+ for(let i=0;i<(window.innerWidth<650?16:32);i++){
+  const star=document.createElement('i');star.className='stardot';
+  star.style.left=Math.random()*100+'%';star.style.top=Math.random()*100+'%';
+  star.style.setProperty('--twinkle',(2+Math.random()*4)+'s');
+  star.style.animationDelay=(-Math.random()*6)+'s';sky.appendChild(star);
+ }
+})();
+
+
+// Small glowing apology notes and floating hearts stay behind the words.
+(function decorateApologySections(){
+  document.querySelectorAll('.apology-scene').forEach((section,sectionIndex)=>{
+    const art=document.createElement('div');art.className='apology-art';art.setAttribute('aria-hidden','true');
+    art.innerHTML='<span class="apology-word">I’m sorry ♡</span><span class="apology-envelope">💌</span>';
+    for(let i=0;i<8;i++){
+      const heart=document.createElement('span');heart.className='apology-heart';
+      heart.textContent=['♡','🤍','♡','💕'][i%4];
+      heart.style.setProperty('--left',(7+i*12)+'%');
+      heart.style.setProperty('--size',(14+i%3*5)+'px');
+      heart.style.setProperty('--speed',(9+i%4*2)+'s');
+      heart.style.setProperty('--delay',(-i*1.9-sectionIndex)+'s');
+      art.appendChild(heart);
+    }
+    for(let i=0;i<9;i++){
+      const light=document.createElement('i');light.className='apology-light';
+      light.style.setProperty('--left',(5+i*11)+'%');
+      light.style.setProperty('--top',(12+(i*29)%74)+'%');
+      light.style.setProperty('--speed',(3+i%4)+'s');
+      light.style.setProperty('--delay',(-i*.7)+'s');
+      art.appendChild(light);
+    }
+    section.prepend(art);
+  });
+})();
+
+
+// Start floating apology messages once the very last popup appears.
+function startFinalApologyFloat(popup){
+    if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+    const layer=popup.querySelector('.final-apology-layer');
+    if(!layer)return;
+    const messages=['I’m so sorry 🥺','Sorry, Betuuu 🤍','I’m truly sorry ♡','Please forgive me 💗','I’ll do better 🌷','I’m sorry, Madam Ji 💌'];
+    let created=0;
+    const spawn=()=>{
+        if(!popup.isConnected)return;
+        const note=document.createElement('span');
+        note.className='final-apology-note';
+        note.textContent=messages[created++%messages.length];
+        note.style.setProperty('--x',(3+Math.random()*75)+'%');
+        note.style.setProperty('--drift',(-70+Math.random()*140)+'px');
+        note.style.setProperty('--font',(12+Math.random()*7)+'px');
+        const duration=8+Math.random()*5;
+        note.style.setProperty('--time',duration+'s');
+        layer.appendChild(note);
+        setTimeout(()=>note.remove(),duration*1000+100);
+    };
+    for(let i=0;i<7;i++)setTimeout(()=>{if(popup.isConnected)spawn()},i*400);
+    const interval=setInterval(()=>{
+        if(!popup.isConnected){clearInterval(interval);return;}
+        if(layer.childElementCount<17)spawn();
+    },950);
+}
+
+
+// Storybook interactions, no external JavaScript dependencies.
+function openEnvelopeLetter(){
+ const envelope=document.getElementById('envelopeTrigger');
+ if(envelope.classList.contains('opening'))return;
+ envelope.classList.add('opening');
+ window.setTimeout(()=>{openPopup();envelope.classList.remove('opening');},850);
+}
+function changeTeddyMessage(button){
+ const sign=button.querySelector('.teddy-sign');
+ sign.textContent=sign.textContent.includes('Madam Ji')?'I’ll do better, one day at a time. 🤍':'I’m Sorry, Madam Ji 🥺❤️';
+}
+function toggleMusic(){
+ const audio=document.getElementById('bgMusic');const button=document.getElementById('musicToggle');
+ if(audio.paused){audio.play().then(()=>{button.textContent='⏸';button.setAttribute('aria-label','Pause music')}).catch(()=>{button.textContent='▶';});}
+ else{audio.pause();button.textContent='▶';button.setAttribute('aria-label','Play music');}
+}
+function setMusicVolume(value){document.getElementById('bgMusic').volume=Number(value)/100;}
+(function animateTimeline(){
+ const timeline=document.querySelector('.timeline');if(!timeline)return;
+ const items=timeline.querySelectorAll('.timelineItem');
+ if(!('IntersectionObserver' in window)){items.forEach(el=>el.classList.add('memory-visible'));return;}
+ const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('memory-visible');observer.unobserve(entry.target)}})},{threshold:.16});
+ items.forEach(item=>observer.observe(item));
+ function updateLine(){const rect=timeline.getBoundingClientRect();const height=Math.max(0,Math.min(rect.height,window.innerHeight*.65-rect.top));timeline.style.setProperty('--timeline-progress',100*height/Math.max(rect.height,1)+'%');}
+ window.addEventListener('scroll',updateLine,{passive:true});updateLine();
+})();
+
+</script>
+
+</body>
+</html>
